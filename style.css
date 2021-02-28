@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-size: cover;
+<<<<<<< Updated upstream
+  color: #FFFFFF;
+=======
+  color: #000000;
+>>>>>>> Stashed changes
+  padding: 2% 2%;
+  overflow: hidden;
+  transition: background-image 1s ease-in-out;
+}
+.timeStyle {
+  display: flex;
+  flex-direction:column;
+}
+.wheatherStyle {
+  display: flex;
+  flex-direction:column;
+}
+.quoteStyle {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  text-align: right;
+  align-items: flex-end;
+  padding: 1em 1em 1em 12em;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: normal;
+  padding-top: 3%;
+}
+.time {
+  font-size: 60px;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  margin-bottom: 0.3rem;
+  opacity: 0.8;
+}
+.quote {
+  font-size: 1.2rem;
+  margin: 0;
+  border-radius: 1em;
+}
+.quote figcaption,
+.quote blockquote {
+  margin: 1em;
+}
+.quote figcaption {
+  text-align: right;
+}
+button {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  background-image: url("https://findicons.com/files/icons/1254/flurry_system/256/software_update.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: grayscale(.8);
+  margin: 10px;
+}
+button:hover {
+  filter: grayscale(.2);
+}
+button:active,
+button:focus {
+  outline: 0;
+}
+button:active{
+  transform: scale(1.02)
+}
+#btnImg {
+  margin: 1em;
+  display: flex;
+  align-self: flex-end;
+}
+.city {
+  width: 300px;
+  padding: 10px 0;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.temperature {
+  font-size: 40px;
+}
+.weather-description {
+  width: 300px;
+  margin: 20px auto;
+  font-size: 20px;
+  padding: 12px 0;
+  color: #ffffff;
+  background-color:#44aadd;
+  border-radius: 5px;
+}
+.weather-icon {
+  font-size: 160px;
+  color: #44aadd;
+}
+.weather-icon:hover {
+  animation: shake 1.5s;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+}
+
+@media (max-width: 700px) {
+  body {
+    overflow-y: auto;
+  }
+  .time {
+    font-size: 4rem;
+  }
+  #btnImg {
+    align-self: center;
+  }
+  .row {
+    flex-direction: column;
+}
+.quoteStyle {
+  align-items: center;
+  text-align: center;
+  padding: 0;
+}
+}
